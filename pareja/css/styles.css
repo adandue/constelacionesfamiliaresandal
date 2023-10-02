@@ -1,0 +1,193 @@
+:root {
+    --azul-fuerte: #0f425e;
+    --azul-claro: #00bfcd;
+    --blanco: white;
+    --amarillo: #7d792e;
+    --gris: #4d4d4d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: whitesmoke;
+}
+.hero {
+    height: 300px;
+    margin: 0;
+    background-color: var(--azul-fuerte);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.hero-title {
+    font-size: 5.2rem;
+    color: white;
+    margin: 0;
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: flex-end;
+    justify-self: center;
+}
+.hero-title strong {
+    color: var(--azul-claro);
+}
+.hero-subtitle {
+    font-size: 4.5rem;
+    color: var(--blanco);
+    margin: 0;
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: flex-start;
+    justify-self: center;
+}
+.hero-subtitle strong {
+    color: var(--azul-claro);
+}
+.pareja {
+    height: auto;
+    max-width: 100%;
+    display: grid;
+    color: var(--gris);
+    margin: 0 10%;
+    justify-content: center;
+    justify-items: center;
+}
+.pareja h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--gris);
+    margin: 2rem 0;
+    align-self: center;
+    justify-self: center;
+}
+.pareja p {
+    font-size: 2rem;
+    color: var(--gris);
+    margin: 2rem 0;
+}
+.pareja h5 {
+    text-align: center;
+    justify-self: center;
+    font-size: 2.8rem;
+    color: var(--gris);
+    margin: 2rem 0;
+}
+.pareja h6 {
+    text-align: center;
+    justify-self: center;
+    font-size: 2.2rem;
+    color: var(--gris);
+    margin: 2rem 0;
+}
+.pareja-text2 {
+    margin-bottom: 5rem;
+}
+.costos {
+    height: 10rem;
+    color: var(--gris);
+    margin: 5rem 0;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 50% 50%;
+}
+.costos h2 {
+    color: #4d4d4d;
+    font-size: 2.6rem;
+    justify-self: center;
+    margin: 3.2rem;
+}
+.costos-text1 {
+    align-self: flex-end;
+    grid-area: 1 / 2 / 2 / 3;
+}
+.costos-text2 {
+    align-self: flex-start;
+    grid-area: 2 / 2 / 3 / 3;
+}
+.social-link.twitter{
+    background-image: url(../../img/twitter.svg);
+}
+.social-link.facebook{
+    background-image: url(../../img/facebook.svg);
+}
+.social-link.whatsapp{
+    background-image: url(../../img/whatsapp.svg);
+}
+@media screen and (max-width: 1024px) {
+    .hero-subtitle {
+        font-size: 3.8rem;
+    }
+    .costos {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 3.2rem;
+    }
+    .pareja h5 {
+        font-size: 2.4rem;
+        align-self: center;
+    }
+    .pareja h6 {
+        font-size: 2.2rem;
+        align-self: center;
+    }
+    .costos h2 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-subtitle {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    .pareja p {
+        text-align: center;
+    }
+    .pareja h5 {
+        font-size: 2rem;
+    }
+    .pareja h6 {
+        font-size: 2rem;
+        align-self: center;
+    }
+    .costos h2 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .pareja h5 {
+        font-size: 2rem;
+    }
+    .pareja h6 {
+        font-size: 1.6rem;
+        align-self: center;
+    }
+    .costos h2 {
+        margin: 1.5rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero-title {
+        font-size: 3.2rem;
+    }
+    .hero-subtitle {
+        font-size: 2.2rem;
+    }
+    .pareja h2 {
+        font-size: 2.5rem;
+    }
+    .pareja p {
+        font-size: 1.9rem;
+    }
+}

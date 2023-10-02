@@ -1,0 +1,66 @@
+:root {
+    --azul-fuerte: #0f425e;
+    --azul-claro: #00bfcd;
+    --blanco: white;
+    --amarillo: #7d792e;
+    --gris: #4d4d4d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contacto
+{
+    background: var(--azul-fuerte);
+    color: var(--blanco);
+    height: 33rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "social social";
+}
+.social
+{
+    grid-area: social;
+    background-size: 100%;
+    padding: 3rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.social h3 {
+    font-size: 1.8rem;
+}
+.social h2 {
+    font-size: 2.4rem;
+}
+.social h1 {
+    font-size: 3rem;
+}
+.social-link
+{
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 1rem; 
+    background-size: 10rem 10rem;
+}
+@media screen and (max-width: 767px) {
+    .social-link {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 2rem 10px; 
+        background-size: 60px 60px;
+    }
+    .contacto {
+            height: 400px;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "social"
+            "social"
+            "social"
+            "form";
+    }
+} 

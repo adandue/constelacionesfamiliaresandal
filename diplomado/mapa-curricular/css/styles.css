@@ -1,0 +1,284 @@
+:root {
+    --azul-fuerte: #0f425e;
+    --azul-claro: #00bfcd;
+    --blanco: white;
+    --rosa: #953e69;
+    --amarillo: #7d792e;
+    --gris: #4d4d4d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 0;
+}
+.hero {
+    height: 30rem;
+    background: var(--blanco);
+    display: grid;
+}
+.hero-title {
+    font-size: 7rem;
+    font-weight: normal;
+    align-self: center;
+    justify-self: center;
+    margin: 0 10%;
+    text-align: center;
+    color: var(--azul-fuerte);
+}
+.hero-title strong {
+    color: var(--rosa);
+}
+.intro {
+    height: 30rem;
+    text-align: center;
+    background: var(--blanco);
+    color: var(--gris);
+}
+.intro p {
+    font-size: 5rem;
+    margin: 0 10%;
+}
+.mapa-curricular{
+    display: grid;
+}
+.modulo-azul {
+    width: 40%;
+    text-align: left;
+    color: var(--azul-fuerte);
+    height: auto;
+    padding: 1rem;
+    justify-self: center;
+    text-align: center;
+    display: inline-block;
+    margin:  5% 0;
+}
+h2 {
+    font-size: 5rem;
+}
+.modulo-list {
+    font-size: 4.5rem;
+    list-style: decimal;
+}
+.modulo-sublist {
+    font-size: 3.5rem;
+    list-style: lower-alpha;
+    font-style: oblique;
+}
+.modulo-rosa {
+    width: 40%;
+    color: var(--rosa);
+    height: auto;
+    padding: 1rem;
+    justify-self: center;
+    text-align: center;
+    display: inline-block;
+    margin:  5% 0;
+}
+.modulo-gris {
+    width: 40%;
+    color: var(--gris);
+    height: auto;
+    padding: 1rem;
+    justify-self: center;
+    text-align: center;
+    display: inline-block;
+    margin:  5% 0;
+}
+main a {
+    border: none;
+    text-align: center;
+    border-radius: 1.6rem;
+    text-decoration: none;
+    align-self: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--rosa); 
+    color: var(--blanco); 
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+.footer
+{
+    height: 10rem;
+    color: var(--blanco);
+    background: linear-gradient(var(--azul-fuerte), var(--rosa));
+    padding: 3rem;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer a 
+{
+    color: white
+}
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 6rem;
+    }
+    .intro p {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .modulo-list {
+        font-size: 3.6rem;
+    }
+    .modulo-sublist {
+        font-size: 3rem;
+    }
+    .modulo-azul {
+        width: 50%;
+    }
+    .modulo-rosa {
+        width: 50%;
+    }
+    .modulo-gris {
+        width: 50%;
+    }
+    main a {
+        font-size: 3rem;
+    }
+    .footer {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 5rem;
+    }
+    .intro p {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    .modulo-list {
+        font-size: 3.1rem;
+    }
+    .modulo-sublist {
+        font-size: 2.6rem;
+    }
+    .modulo-azul {
+        width: 60%;
+    }
+    .modulo-rosa {
+        width: 60%;
+    }
+    .modulo-gris {
+        width: 60%;
+    }
+    main a {
+        font-size: 2.5rem;
+    }
+    .footer {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    .intro p {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .modulo-list {
+        font-size: 2.3rem;
+    }
+    .modulo-sublist {
+        font-size: 1.9rem;
+    }
+    .modulo-azul {
+        width: 65%;
+    }
+    .modulo-rosa {
+        width: 65%;
+    }
+    .modulo-gris {
+        width: 65%;
+    }
+    main a {
+        font-size: 2rem;
+    }
+    .footer {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    .intro p {
+        font-size: 2.6rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .modulo-list {
+        font-size: 2rem;
+    }
+    .modulo-sublist {
+        font-size: 1.6rem;
+    }
+    .modulo-azul {
+        width: 70%;
+    }
+    .modulo-rosa {
+        width: 70%;
+    }
+    .modulo-gris {
+        width: 70%;
+    }
+    main a {
+        font-size: 1.6rem;
+    }
+    .footer {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero-title {
+        font-size: 3.3rem;
+    }
+    .intro p {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    .modulo-list {
+        font-size: 1.8rem;
+    }
+    .modulo-sublist {
+        font-size: 1.4rem;
+    }
+    .modulo-azul {
+        width: 70%;
+    }
+    .modulo-rosa {
+        width: 70%;
+    }
+    .modulo-gris {
+        width: 70%;
+    }
+    main a {
+        font-size: 1.4rem;
+    }
+    .footer {
+        font-size: 1.5rem;
+    }
+} 
